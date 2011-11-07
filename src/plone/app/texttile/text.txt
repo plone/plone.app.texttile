@@ -1,0 +1,55 @@
+Content tiles
+=============
+
+Here we show up the main tiles used for the content usage.
+
+First, we set up a browser instance and get Manager privileges::
+
+    >>> from plone.testing.z2 import Browser
+    >>> app = layer['app']
+    >>> browser = Browser(app)
+    >>> browser.handleErrors = False
+    >>> portal = layer['portal']
+    >>> portalURL = portal.absolute_url()
+
+    >>> from plone.app.testing import setRoles
+    >>> from plone.app.testing import TEST_USER_ID, TEST_USER_NAME, TEST_USER_PASSWORD
+    >>> browser.addHeader('Authorization', 'Basic %s:%s' % (TEST_USER_NAME, TEST_USER_PASSWORD,))
+    >>> setRoles(portal, TEST_USER_ID, ['Manager'])
+
+    >>> from plone.app.standardtiles.tests.base import EDITOR_USER_NAME, EDITOR_USER_PASSWORD, MANAGER_USER_NAME, MANAGER_USER_PASSWORD
+
+    >>> import transaction
+    >>> transaction.commit() # make the browser see this role
+
+We also keep another testbrowser handy for testing how tiles are rendered if
+you're not logged in::
+
+    >>> unprivileged_browser = Browser(app)
+
+We create a page in the site to use it in tests later::
+
+    >>> browser.open(portalURL + '/createObject?type_name=Document')
+    >>> browser.getControl(name='title').value = 'A simple page'
+    >>> browser.getControl(name='description').value = 'A description'
+    >>> browser.getControl('Save').click()
+    >>> pageURL = browser.url
+    >>> pageURL
+    'http://nohost/plone/a-simple-page'
+
+Text tile
+-------------
+
+The text tile displays a list of the keywords (aka subjects)
+assigned to the context.
+
+Add the tile::
+
+    >>> browser.open(pageURL + '/@@plone.app.texttile.text')
+    >>> browser.getControl('Save').click()
+
+The tile will show them::
+
+    >>> unprivileged_browser.open(pageURL + '/@@plone.app.standardtiles.text')
+    >>> unprivileged_browser.contents
+    '...id="category"...Sprint...Statues...'
