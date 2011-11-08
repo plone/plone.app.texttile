@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.1'
 tests_require = [
@@ -9,7 +8,7 @@ tests_require = [
 setup(name='plone.app.texttile',
       version=version,
       description="",
-      long_description=open('README.rst').read(() + \
+      long_description=open('README.rst').read() + \
                        '\n' + open('CHANGES.rst').read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
