@@ -21,6 +21,12 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <!-- Static resources -->
+    <browser:resourceDirectory
+        name="plone.app.texttile"
+        directory="resources"
+        />
+        
     <plone:tile
         name="plone.app.texttiles.text"
         title="Text tile"
