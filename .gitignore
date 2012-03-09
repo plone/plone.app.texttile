@@ -1,4 +1,5 @@
 *.py?
 *.sw?
+.DS_Store
 
-src/plone.app.texttile.egg-info/
+/plone.app.texttile.egg-info/

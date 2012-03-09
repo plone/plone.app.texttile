@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<registry>
+
+    <record name="plone.app.deco.tiles">
+        <value purge="false">
+            <element>plone.app.deco.tile_text</element>
+        </value>
+    </record>
+    <records prefix="plone.app.deco.tile_text"
+             interface="plone.app.deco.interfaces.ITile">
+        <value key="name">text</value>
+        <value key="label">Text</value>
+        <value key="group">structure</value>
+        <value key="icon">++resource++plone.app.texttilemicon.png</value>
+    </records>
+
+</registry>

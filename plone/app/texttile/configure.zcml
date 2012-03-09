@@ -6,7 +6,12 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plone">
 
-    <includeDependencies package="." />
+    <include package="plone.tiles" />
+
+    <browser:resourceDirectory
+        name="plone.app.texttile"
+        directory="static"
+        />
 
     <genericsetup:registerProfile
         name="default"
@@ -21,7 +26,7 @@
         title="Text tile"
         description="A tile which adds text"
         add_permission="zope.Public"
-        class=".text.TextTile"
+        class=".tile.TextTile"
         for="*"
         permission="zope2.View"
         />
