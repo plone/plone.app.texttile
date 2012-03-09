@@ -11,7 +11,7 @@
         <value key="name">text</value>
         <value key="label">Text</value>
         <value key="group">structure</value>
-        <value key="icon">++resource++plone.app.texttilemicon.png</value>
+        <value key="icon">++resource++plone.app.texttile/icon.png</value>
     </records>
 
 </registry>
