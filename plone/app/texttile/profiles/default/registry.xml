@@ -10,7 +10,6 @@
              interface="plone.app.deco.interfaces.ITile">
         <value key="name">text</value>
         <value key="label">Text</value>
-        <value key="group">structure</value>
         <value key="icon">++resource++plone.app.texttile/icon.png</value>
     </records>
 
