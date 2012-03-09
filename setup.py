@@ -27,6 +27,7 @@ setup(
     install_requires=[
         'setuptools',
         'plone.tiles',
+        'plone.app.deco',
     ],
     tests_require=tests_require,
     extras_require=dict(test=tests_require),
