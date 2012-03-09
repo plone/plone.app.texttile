@@ -6,13 +6,8 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plone">
 
-    <!-- Include our dependencies -->
     <includeDependencies package="." />
 
-    <!-- Grok the package to initialise schema interfaces and content classes -->
-    <grok:grok package="." />
-
-    <!-- Register an extension profile to make the product installable -->
     <genericsetup:registerProfile
         name="default"
         title="Text tile"
