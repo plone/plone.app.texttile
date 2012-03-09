@@ -1,5 +1,5 @@
-from plone.tiles.tile import Tile
+from plone.tiles.tile import PersistentTile
 
 
-class TextTile(Tile):
+class TextTile(PersistentTile):
     """ A text tile """
