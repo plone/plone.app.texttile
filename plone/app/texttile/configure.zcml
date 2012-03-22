@@ -22,7 +22,7 @@
         />
 
     <plone:tile
-        name="plone.app.texttiles"
+        name="plone.app.texttile"
         title="Text tile"
         description="A tile which adds text"
         add_permission="zope.Public"
