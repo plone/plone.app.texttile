@@ -27,6 +27,7 @@
         description="A tile which adds text"
         add_permission="zope.Public"
         class=".tile.TextTile"
+        template="tile.pt"
         for="*"
         permission="zope2.View"
         />
