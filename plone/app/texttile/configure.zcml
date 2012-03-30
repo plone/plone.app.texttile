@@ -13,24 +13,24 @@
         directory="static"
         />
 
+    <plone:tile
+        name="plone.app.texttile"
+        title="Text tile"
+        description="A tile which adds text"
+        permission="zope2.View"
+        add_permission="plone.ModifyDecoLayout"
+        class=".tile.TextTile"
+        schema=".tile.ITextTile"
+        template="tile.pt"
+        for="*"
+        />
+
     <genericsetup:registerProfile
         name="default"
         title="Text tile"
         description="A text tile which can be used by Deco and Blocks"
         directory="profiles/default"
         provides="Products.GenericSetup.interfaces.EXTENSION"
-        />
-
-    <plone:tile
-        name="plone.app.texttile"
-        title="Text tile"
-        description="A tile which adds text"
-        add_permission="zope.Public"
-        class=".tile.TextTile"
-        schema=".tile.ITextTile"
-        template="tile.pt"
-        for="*"
-        permission="zope2.View"
         />
 
 </configure>
