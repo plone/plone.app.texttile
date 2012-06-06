@@ -1,0 +1,6 @@
+#tiletype-plone-app-texttile {
+  background: url(++resource++plone.app.texttile/tile.png) no-repeat scroll center center #FFFFFF;
+}
+#tiletype-plone-app-texttile > * {
+  display: none;
+}
