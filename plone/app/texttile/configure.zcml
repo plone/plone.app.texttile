@@ -8,10 +8,9 @@
     <include package="plone.tiles" />
     <include package="plone.app.deco" />
 
-    <browser:resourceDirectory
-        name="plone.app.texttile"
-        directory="static"
-        />
+    <browser:resource name="plone.app.texttile.js"  file="tile.js" />
+    <browser:resource name="plone.app.texttile.css" file="tile.css" />
+    <browser:resource name="plone.app.texttile.png" file="tile.png" />
 
     <plone:tile
         name="plone.app.texttile"
