@@ -3,8 +3,9 @@
   xmlns:i18n="http://xml.zope.org/namespaces/i18n"
   xml:lang="en" lang="en" i18n:domain="plone">
 
-  <body>
+<body>
 
+  <div tal:replace="structure view/data/text" />
 
-  </body>
+</body>
 </html>

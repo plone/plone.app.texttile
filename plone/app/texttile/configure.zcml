@@ -5,8 +5,7 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plone">
 
-    <include package="plone.tiles" />
-    <include package="plone.app.deco" />
+    <include package="plone.app.tiles" />
 
     <browser:resource name="plone.app.texttile.js"  file="tile.js" />
     <browser:resource name="plone.app.texttile.css" file="tile.css" />

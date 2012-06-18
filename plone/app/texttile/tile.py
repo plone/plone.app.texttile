@@ -15,4 +15,3 @@ class ITextTile(form.Schema):
 
 class TextTile(PersistentTile):
     """ A text tile """
-

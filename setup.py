@@ -26,7 +26,11 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'zope.schema',
+        'zope.i18nmessageid',
+        'plone.directives.form',
         'plone.tiles',
+        'plone.app.z3cform',
         'plone.app.deco',
     ],
     tests_require=tests_require,
