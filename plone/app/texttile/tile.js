@@ -36,9 +36,6 @@
 "use strict";
 
 // # Register Text Tile with Plone
-$.plone = $.plone || {};
-$.plone.tiletype = $.plone.tiletype || {};
-$.plone.tiletype.register('plone.app.texttile', new $.plone.tiletype.TileType({}));
-
+$.plone.tiletype.register('plone.app.texttile', {});
 
 }(jQuery));
