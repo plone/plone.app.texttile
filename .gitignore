@@ -3,3 +3,4 @@
 .DS_Store
 
 /plone.app.texttile.egg-info/
+/dist/
