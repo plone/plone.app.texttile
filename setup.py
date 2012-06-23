@@ -2,7 +2,16 @@ from setuptools import setup, find_packages
 
 version = '1.0'
 tests_require = [
+    'plone.testing',
     'plone.app.testing',
+    'zope.configuration',
+    'zope.interface',
+    'zope.component',
+    'zope.publisher',
+    'zope.contentprovider',
+    'plone.portlets',
+    'plone.dexterity',
+    'Products.CMFCore',
 ]
 
 setup(
@@ -31,7 +40,7 @@ setup(
         'plone.directives.form',
         'plone.tiles',
         'plone.app.z3cform',
-        'plone.app.deco',
+        'plone.app.tiles',
     ],
     tests_require=tests_require,
     extras_require=dict(test=tests_require),
