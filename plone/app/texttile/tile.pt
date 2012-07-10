@@ -7,7 +7,9 @@
 
 <metal:tile fill-slot="content">
 
-  <div tal:replace="structure view/data/text" />
+  <div class="tile-text"
+      tal:condition="view/data/text"
+      tal:content="structure view/data/text" />
 
 </metal:tile>
 
