@@ -16,7 +16,7 @@
         title="Text tile"
         description="A tile which adds text"
         permission="zope2.View"
-        add_permission="plone.ModifyDecoLayout"
+        add_permission="zope2.View"
         class=".tile.TextTile"
         schema=".tile.ITextTile"
         template="tile.pt"
