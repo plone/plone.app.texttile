@@ -15,7 +15,7 @@
         description="A tile which adds text"
         icon="++resource++plone.app.texttile.png"
         permission="zope2.View"
-        add_permission="zope2.View"
+        add_permission="plone.app.tiles.AddTile"
         class=".tile.TextTile"
         schema=".tile.ITextTile"
         template="tile.pt"
